@@ -1,3 +1,4 @@
+<%@ page import="java.util.Date" %>
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
@@ -11,6 +12,7 @@
     <title></title>
   </head>
   <body>
-
+    <h3>Hello world!</h3>
+    <marquee><%=new Date()%></marquee>
   </body>
 </html>
