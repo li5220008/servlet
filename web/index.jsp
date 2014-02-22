@@ -15,4 +15,9 @@
     <h3>Hello world!</h3>
     <marquee><%=new Date()%></marquee>
   </body>
+</head>
+<body>
+<h3>Hello world!!</h3>
+<marquee><%=new Date()%></marquee>
+</body>
 </html>

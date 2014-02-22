@@ -5,11 +5,29 @@
 		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
            version="2.5">
     <servlet>
-        <servlet-name>anyName</servlet-name>
+        <servlet-name>hello</servlet-name>
         <servlet-class>HelloServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>anyName</servlet-name>
-        <url-pattern>/action/*</url-pattern>
+        <servlet-name>hello</servlet-name>
+        <url-pattern>/hello/*</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>config</servlet-name>
+        <servlet-class>ConfigServletTest</servlet-class>
+        <init-param>
+            <param-name>firstName</param-name>
+            <param-value>zhang</param-value>
+        </init-param>
+        <init-param>
+            <param-name>lastName</param-name>
+            <param-value>san</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>config</servlet-name>
+        <url-pattern>/config/*</url-pattern>
+    </servlet-mapping>
+
 </web-app>
